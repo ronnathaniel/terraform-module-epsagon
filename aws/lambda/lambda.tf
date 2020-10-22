@@ -21,9 +21,15 @@ resource "aws_iam_role" "lambda" {
 ROLEPOLICY
 }
 
-resource "aws_lambda_layer_version" "epsagon_agent" {
-  layer_name = "epsagon_agent_layer"
+module "agent" {
+//  source = "github.com/ronnathaniel/terraform-module-epsagon/tree/main/modules/tracing_agent_layer"
+  source = "../../modules/tracing_agent_layer/"
+}
 
+data "archive_file" "lambda-archive" {
+  type = "zip"
+  source_file = "src/main.py"
+  output_path = "function_package.zip"
 }
 
 resource "aws_lambda_function" "tf_test" {

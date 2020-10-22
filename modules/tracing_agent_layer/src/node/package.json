@@ -1,0 +1,14 @@
+{
+  "name": "tracing_agent_layer",
+  "version": "0.0.1",
+  "description": "Epsagon Layer for Node Tracing Layer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ron Nathaniel",
+  "license": "MIT",
+  "dependencies": {
+    "epsagon": "^1.93.0"
+  }
+}
