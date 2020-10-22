@@ -26,7 +26,8 @@ delete_build() {
 
   rm -rf ./src/python/*
   find ./src/node -type f ! -name package.json -delete
-  find ./src/node -type d ! -name node_modules -delete
+#  find ./src/node/node -type d ! -name node_modules -delete
+  rm -rf ./src/node/node_modules/*
 }
 
 build_python() {
