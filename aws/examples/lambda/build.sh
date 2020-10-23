@@ -2,7 +2,11 @@
 
 
 prepare_deployment_package() {
-    zip -r -j function_package.zip src/*
+
+  if [[ -e function.zip ]]; then
+    rm function_package.zip
+  fi
+  zip -r -j function_package.zip src/*
 }
 
 

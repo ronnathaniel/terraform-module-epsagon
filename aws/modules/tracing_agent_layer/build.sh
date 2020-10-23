@@ -20,8 +20,13 @@ create_layer_deployments() {
 
   start_position="$(pwd)"
 
-  rm -rf layer_package_python.zip
-  rm -rf layer_package_node.zip
+  if [[ -e layer_package_python.zip ]]; then
+    rm layer_package_python.zip
+  fi
+
+  if [[ -e layer_package_node.zip ]]; then
+    rm -rf layer_package_node.zip
+  fi
 
   cd src/python || cd .
 #  zip -r layer_package_python.zip ./*
@@ -46,8 +51,13 @@ delete_build() {
   # to delete all but 'dir' in directory
   # find ./PARENT/DIR -type d ! -name DIR -delete
 
+#  if [[ -d src/python ]]; then
   rm -rf ./src/python/*
+#  fi
+
+#  if [[ -d src/node ]]; then
   find ./src/node -type f ! -name package.json -delete
+#    fi
   #  find ./src/node/node -type d ! -name node_modules -delete
   rm -rf ./src/node/node_modules/*
 }
