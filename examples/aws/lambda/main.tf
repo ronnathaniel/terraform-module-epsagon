@@ -34,6 +34,7 @@ resource "aws_lambda_function" "tf_test" {
       EPSAGON_TOKEN       = "87a6f6b4-b796-455d-9d5e-bba5119c7d87"
       EPSAGON_APP_NAME    = "terraform-store"
       AUTOWRAPT_BOOTSTRAP = "epsagon"
+      EPSAGON_DEBUG = true
     }
   }
 }
