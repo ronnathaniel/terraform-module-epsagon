@@ -45,16 +45,7 @@ build_node() {
 }
 
 create_layer_deployments() {
-
   start_position="$(pwd)"
-
-#  if [[ -e layer_package_python.zip ]]; then
-#    rm layer_package_python.zip
-#  fi
-#
-#  if [[ -e layer_package_node.zip ]]; then
-#    rm -rf layer_package_node.zip
-#  fi
 
   cd src || cd .
   zip -r "${start_position}/build/layer_package_python.zip" .
