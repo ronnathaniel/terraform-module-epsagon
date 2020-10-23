@@ -6,18 +6,14 @@ resource "aws_iam_role" "lambda" {
 }
 
 module "agent" {
-  source = "../../modules/tracing_agent_layer"
+//  source = "../../modules/tracing_agent_layer"
+  source = "github.com/ronnathaniel/terraform-modules-epsagon/aws/modules/tracing_agent_layer"
 
   //  providers = {
   //    aws = aws.main
   //  }
 }
 
-//data "archive_file" "lambda-archive" {
-//  type = "zip"
-//  source_file = "${path.module}/src/main.py"
-//  output_path = "${path.module}/function_package.zip"
-//}
 
 resource "aws_lambda_function" "tf_test" {
   function_name = "tf_test_ron"
