@@ -1,0 +1,13 @@
+../python3.8/site-packages/autowrapt-init.pth,sha256=-VybGwt8Q6ZPRIESTlSYeYwlDSRjSuACbKgK7Qyenh8,143
+autowrapt-1.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+autowrapt-1.0.dist-info/METADATA,sha256=ceGtK4-Z9ijESixLl3gzUk4jIXFV2NGBNyzTF5IRBcY,295
+autowrapt-1.0.dist-info/RECORD,,
+autowrapt-1.0.dist-info/WHEEL,sha256=f4PqOcdVW6HasG8DyXAmXjAicykhyNoHtT9u8MY-CUU,93
+autowrapt-1.0.dist-info/entry_points.txt,sha256=v2uzORHJS910myc7Y3lvlfbl-E7pC4yUH6_nmTEn1ps,63
+autowrapt-1.0.dist-info/top_level.txt,sha256=f80m7LSDF6USTXWyKVSAshWiJp54uqOHISq5d3wsQno,10
+autowrapt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autowrapt/__pycache__/__init__.cpython-38.pyc,,
+autowrapt/__pycache__/bootstrap.cpython-38.pyc,,
+autowrapt/__pycache__/examples.cpython-38.pyc,,
+autowrapt/bootstrap.py,sha256=XI1tdxgR4zzw0RAAf8Fw86F7nDmJS78w5uXKjEBaUfg,2622
+autowrapt/examples.py,sha256=quTJ4QuXNt7DDDbJB0SWfhmAXS5V9XGsSOJfb0Y5ums,143
