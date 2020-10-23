@@ -1,6 +1,11 @@
 #! /bin/bash
 
 
+prepare_deployment_package() {
+    zip -r -j function_package.zip src/*
+}
+
+
 build() {
 
   terraform fmt
@@ -9,4 +14,6 @@ build() {
 
 }
 
+
+prepare_deployment_package
 build
