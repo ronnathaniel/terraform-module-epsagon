@@ -25,7 +25,7 @@ resource "aws_lambda_function" "tf_test" {
   role          = aws_iam_role.lambda.arn
   runtime       = "python3.8"
 
-  filename         = "function_package.zip"
+  filename         = "build/function_package.zip"
   source_code_hash = filebase64sha256("build/function_package.zip")
 
   layers = [
