@@ -4,11 +4,10 @@ Terraform modules to apply observability to serverless applications.
 
 Powered by Epsagon.
 
-## AWS
 
 
 
-### [Lambda](https://github.com/ronnathaniel/terraform-module-epsagon/tree/main/aws/examples/lambda)
+### [AWS Lambda](https://github.com/ronnathaniel/terraform-module-epsagon/tree/main/aws/examples/lambda)
 
 Lambda Functions can overlay layers onto the function package, allowing for inclusion of additional code. 
 
