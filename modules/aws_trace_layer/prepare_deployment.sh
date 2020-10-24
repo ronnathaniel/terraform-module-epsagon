@@ -15,14 +15,7 @@ get_os() {
 }
 
 delete_build() {
-  # to delete all but 'file' in directory
-  # find ./PARENT/DIR -type f ! -name FILE -delete
-
-  # to delete all but 'dir' in directory
-  # find ./PARENT/DIR -type d ! -name DIR -delete
-
   rm -rf ./src/python/*
-
   find ./src/nodejs -type f ! -name package.json -delete
   rm -rf ./src/nodejs/node_modules/*
 }
