@@ -4,6 +4,8 @@
 
 Adding automatic tracing to a Lambda function can be done in a few short steps:
 
+### Usage
+
 1) Import Epsagon tracing agent
     
        module "epsagon_agent" {
@@ -20,6 +22,7 @@ Adding automatic tracing to a Lambda function can be done in a few short steps:
            ]
        
        }
+       
 3) Enable auto-tracing with environment variables
 
        resource "aws_lambda_function" "example" {
@@ -39,5 +42,22 @@ Adding automatic tracing to a Lambda function can be done in a few short steps:
            ]
       
        }
-       
-##
+  
+## Tracing Layers
+
+Currently, auto-tracing is only supported in Python and Node applications.
+
+Layers are added to functions through their ARNs. Exported ARNs include:
+
+`layer_python_arn` 
+
+- supported runtimes: python3.6, python3.7, python3.8
+
+`layer_node_arn` 
+
+- supported runtimes: nodejs12
+
+## Examples
+
+An example can be found in [examples](https://github.com/ronnathaniel/terraform-modules-epsagon/tree/main/examples/aws/lambda).
+
