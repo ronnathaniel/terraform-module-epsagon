@@ -1,7 +1,7 @@
 
 
 module "agent" {
-  source = "github.com/ronnathaniel/terraform-modules-epsagon/modules/aws_trace_layer"
+  source = "github.com/ronnathaniel/terraform-modules-epsagon/modules/aws_lambda_trace"
 
   //  providers = {
   //    aws = aws.main

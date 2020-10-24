@@ -7,7 +7,7 @@ Adding automatic tracing to a Lambda function can be done in a few short steps:
 1) Import Epsagon tracing agent
     
        module "epsagon_agent" {
-           source = "github.com/ronnathaniel/terraform-modules-epsagon/modules/aws_trace_layer"
+           source = "github.com/ronnathaniel/terraform-modules-epsagon/modules/aws_lambda_trace"
        }
 2) Inject agent through a layer
 
