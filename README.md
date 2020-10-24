@@ -7,7 +7,7 @@ Powered by Epsagon.
 
 
 
-### [AWS Lambda](https://github.com/ronnathaniel/terraform-module-epsagon/tree/main/modules/aws_trace_layer)
+### [AWS Lambda](https://github.com/ronnathaniel/terraform-module-epsagon/tree/main/modules/aws_lambda_trace#lambda-functions)
 
 Lambda Functions can overlay layers onto the function package, allowing for inclusion of additional code. 
 
