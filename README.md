@@ -5,6 +5,17 @@ Terraform modules to apply observability to serverless applications.
 Powered by Epsagon.
 
 
+## Modules
+
+
+
+### [AWS Lambda](https://github.com/ronnathaniel/terraform-module-epsagon/tree/main/modules/aws_lambda_trace#readme)
+
+The Epsagon Terraform Lambda tracer will inject the Epsagon tracing agent into the function as an overlay, 
+configure appropriate environment variables to enable automatic tracing, and let the tracing agent
+do its thing!
+
+
 ## Installation
 
 Terraform is required for use of these modules.
@@ -27,15 +38,7 @@ To install Terraform, simply run
       sudo yum -y install terraform
 
 
-## Modules
 
-
-
-### [AWS Lambda](https://github.com/ronnathaniel/terraform-module-epsagon/tree/main/modules/aws_lambda_trace#lambda-functions)
-
-The Epsagon Terraform Lambda tracer will inject the Epsagon tracing agent into the function as an overlay, 
-configure appropriate environment variables to enable automatic tracing, and let the tracing agent
-do its thing!
 
 
 
