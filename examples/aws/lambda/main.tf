@@ -1,6 +1,6 @@
 
 
-module "agent" {
+module "epsagon_agent" {
   source = "github.com/ronnathaniel/terraform-modules-epsagon/modules/aws_lambda_trace"
 
   //  providers = {
@@ -25,7 +25,7 @@ resource "aws_iam_role_policy_attachment" "lambda_log" {
 
 
 resource "aws_lambda_function" "tf_test" {
-  function_name = "tf_test_ron_double"
+  function_name = "tf_test_ron"
   handler       = "main.handler"
   role          = aws_iam_role.lambda.arn
   runtime       = "python3.8"
@@ -34,7 +34,7 @@ resource "aws_lambda_function" "tf_test" {
   source_code_hash = filebase64sha256("build/function_package.zip")
 
   layers = [
-    module.agent.layer_python_arn
+    module.epsagon_agent.layer_python_arn
   ]
 
 //  depends_on = [
